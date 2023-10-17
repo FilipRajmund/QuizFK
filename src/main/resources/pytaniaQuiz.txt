@@ -1,0 +1,3 @@
+Kiedy powstała java?;1990;1995;2000;2005;2
+Kto jest twórcą Java?;James Gosling;Ryan Gosling;Bill Gates;Michael Jordan;1
+Co oznacza JDK?;Java Deployment Kit;Java Deplyment Kernel;Java Development Krenel;Java DEvelopment Kit;4
