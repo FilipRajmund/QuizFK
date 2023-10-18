@@ -32,7 +32,10 @@ public class Main {
             if (answer == Integer.parseInt(split[5])){
                 System.out.println("to jest poprawna odpowiedź");
             } else {
-                System.out.println("to jest błędna odpowiedź");
+                System.out.println(answer + " to jest błędna odpowiedź");
+                int numberArray = Integer.parseInt(split[5]);
+
+                System.out.println("Poprawna odpowiedź to: " + split[numberArray]);
             }
             System.out.println();
         }
