@@ -12,6 +12,8 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Path path = Paths.get("src\\main\\resources\\pytaniaQuiz.txt");
         List<String> lines = Files.readAllLines(path);
+        int count=0;
+        int countwrong=0;
 
         for (String line : lines) {
             String[] split = line.split(";");
@@ -30,8 +32,10 @@ public class Main {
                 System.out.print("Wpisz liczbę: ");
             int answer = scanner.nextInt();
             if (answer == Integer.parseInt(split[5])){
+                count++;
                 System.out.println("to jest poprawna odpowiedź");
             } else {
+                countwrong++;
                 System.out.println(answer + " to jest błędna odpowiedź");
                 int numberArray = Integer.parseInt(split[5]);
 
@@ -39,6 +43,8 @@ public class Main {
             }
             System.out.println();
         }
+        System.out.println("Liczba poprawnych odpoiedzi wynosi: " + count);
+        System.out.println("Liczba błędnych odpowiedzi wynosi: " + countwrong);
 
 
     }
